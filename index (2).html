@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Still</title>
+    <style>
+        /* Общие стили */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #002D62;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #333;
+            font-size: 0.9em;
+        }
+        nav a:hover {
+            color: #0056B3;
+        }
+
+        /* Главный баннер */
+        .hero {
+            height: 100vh;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .hero .cta {
+            padding: 10px 30px;
+            background-color: #0056B3;
+            color: white;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .hero .cta:hover {
+            background-color: #003D8F;
+        }
+
+        /* Секции */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .models {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .model {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .model img {
+            width: 100%;
+            height: auto;
+        }
+        .model h3 {
+            margin: 0;
+            padding: 10px;
+            background-color: #f7f7f7;
+        }
+
+        /* Контактная информация */
+        .contact {
+            background-color: #002D62;
+            color: white;
+        }
+        footer {
+            padding: 20px;
+            background-color: #000;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">Still</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#models">Models</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Главная секция -->
+    <div id="home" class="hero">
+        <h1>Welcome to Still</h1>
+        <p>Best still</p>
+        <button class="cta">Go? <button>
+    </div>
+
+
+    <!-- Модели -->
+    <section id="models">
+        <h2>Зима 2024</h2>
+        <div class="models">
+            <div class="model">
+                <img src="https://avatars.mds.yandex.net/i?id=6fac100c22a3470dfeca8e657a856af7_l-9266849-images-thumbs&n=13" alt="Куртка">
+                <h3>Куртка</h3>
+            </div>
+            <div class="model">
+                <img src="https://avatars.mds.yandex.net/i?id=e54a863bc1322b9dd8fe32a7fadf14e7655fa3a4-7015783-images-thumbs&n=13" alt="Штаны">
+                <h3>Штаны</h3>
+            </div>
+            <div class="model">
+                <img src="https://avatars.mds.yandex.net/i?id=927465acd32073731a6bf87745ae5b27c08e4e22-5130535-images-thumbs&n=13" alt="Обувь">
+                <h3>Обувь</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <h2>
+            Contact Us</h2>
+            <p>Email: hz070605@gmail.com</p>
+            <p>Phone: +996509340600</p>
+        </section>
+    
+        <!-- Футер -->
+        <footer>
+            &copy; only still
+        </footer>
+    </body>
+    </html>
+    
